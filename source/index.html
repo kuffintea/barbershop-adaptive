@@ -3,6 +3,10 @@
 
 <head>
   <meta charset="UTF-8">
+  <link rel="icon" href="favicon.ico" sizes="32x32">
+  <link rel="icon" href="favicons/icon.svg" type="image/svg+xml" sizes="152x152">
+  <link rel="apple-touch-icon" href="favicons/180.png" sizes="180x180">
+  <link rel="manifest" href="manifest.webmanifest">
   <title>Барбершоп «Бородинскй»</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
@@ -12,7 +16,11 @@
 <body>
   <header class="main-header">
     <a class="main-header__logo" href="#" aria-current="page">
-      <img class="main-header__logo-image" src="images/logo.svg" width="226" height="30" alt="Барбершоп «Бородинскй».">
+      <picture>
+        <source media="(min-width: 1440px)" width="370" height="153" type="image/svg+xml" srcset="images/logo-desktop.svg">
+        <source media="(min-width: 768px)" width="370" height="100" type="image/svg+xml" srcset="images/logo-tablet.svg">
+        <img class="main-header__logo-image" src="images/logo-mobile.svg" width="226" height="30" alt="Барбершоп «Бородинскй».">
+      </picture>
     </a>
     <nav class="main-nav">
       <div class="container">
@@ -42,7 +50,7 @@
       </button>
     </nav>
   </header>
-  <main class=" ">
+  <main class="main-page">
     <h1 class="visually-hidden">Барбершоп «Бородинскй» - истинно мужская классика</h1>
     <section class="statistics">
       <div class="container">
@@ -141,21 +149,33 @@
         <a class="reviews__to-write button" href="#">Оставить свой</a>
         <div class="reviews__list">
           <blockquote class="reviews__item reviews-card slider__item">
-            <img class="reviews-card__author-image" src="images/avatar-1.jpg" width="50" height="50" alt="Трэвис Баркер.">
+            <picture>
+              <source media="(min-width: 1440px)" width="249" height="160" type="image/jpeg" srcset="images/review-1-desktop@1x.jpg 1x, images/review-1-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" width="80" height="80" type="image/jpeg" srcset="images/review-1-tablet@1x.jpg 1x, images/review-1-tablet@2x.jpg 2x">
+              <img class="reviews-card__author-image" src="images/review-1-mobile@1x.jpg" srcset="images/review-1-mobile@1x.jpg 1x, images/review-1-mobile@2x.jpg 2x" width="50" height="50" alt="Трэвис Баркер.">
+            </picture>
             <div class="reviews-card__author-info">
               <cite class="reviews-card__author-name">Трэвис Баркер</cite>
               <p class="reviews-card__text">Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!</p>
             </div>
           </blockquote>
           <blockquote class="reviews__item reviews-card slider__item">
-            <img class="reviews-card__author-image" src="images/avatar-2.jpg" width="50" height="50" alt="Джон Смит.">
+            <picture>
+              <source media="(min-width: 1440px)" width="249" height="160" type="image/jpeg" srcset="images/review-2-desktop@1x.jpg 1x, images/review-2-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" width="80" height="80" type="image/jpeg" srcset="images/review-2-tablet@1x.jpg 1x, images/review-2-tablet@2x.jpg 2x">
+              <img class="reviews-card__author-image" src="images/review-2-mobile@1x.jpg" srcset="images/review-2-mobile@1x.jpg 1x, images/review-2-mobile@2x.jpg 2x" width="50" height="50" alt="Джон Смит.">
+            </picture>
             <div class="reviews-card__author-info">
               <cite class="reviews-card__author-name">Джон Смит</cite>
               <p class="reviews-card__text">Отличную стрижку мне сделали ребята.</p>
             </div>
           </blockquote>
           <blockquote class="reviews__item reviews-card slider__item">
-            <img class="reviews-card__author-image" src="images/avatar-3.jpg" width="50" height="50" alt="Иван Бородайло.">
+            <picture>
+              <source media="(min-width: 1440px)" width="249" height="160" type="image/jpeg" srcset="images/review-3-desktop@1x.jpg 1x, images/review-3-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" width="80" height="80" type="image/jpeg" srcset="images/review-3-tablet@1x.jpg 1x, images/review-3-tablet@2x.jpg 2x">
+              <img class="reviews-card__author-image" src="images/review-3-mobile@1x.jpg" srcset="images/review-3-mobile@1x.jpg 1x, images/review-3-mobile@2x.jpg 2x" width="50" height="50" alt="Иван Бородайло.">
+            </picture>
             <div class="reviews-card__author-info">
               <cite class="reviews-card__author-name">Иван Бородайло</cite>
               <p class="reviews-card__text">В Бородинском ваша борода в надёжных руках!</p>
