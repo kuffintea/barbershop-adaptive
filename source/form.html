@@ -3,6 +3,10 @@
 
 <head>
   <meta charset="UTF-8">
+  <link rel="icon" href="favicon.ico" sizes="32x32">
+  <link rel="icon" href="favicons/icon.svg" type="image/svg+xml" sizes="152x152">
+  <link rel="apple-touch-icon" href="favicons/180.png" sizes="180x180">
+  <link rel="manifest" href="manifest.webmanifest">
   <title>Барбершоп «Бородинскй»</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
@@ -12,7 +16,11 @@
 <body>
   <header class="main-header">
     <a class="main-header__logo" href="index.html">
-      <img class="main-header__logo-image" src="images/logo.svg" width="226" height="30" alt="Барбершоп «Бородинскй».">
+      <picture>
+        <source media="(min-width: 1440px)" width="370" height="153" type="image/svg+xml" srcset="images/logo-desktop.svg">
+        <source media="(min-width: 768px)" width="370" height="100" type="image/svg+xml" srcset="images/logo-tablet.svg">
+        <img class="main-header__logo-image" src="images/logo-mobile.svg" width="226" height="30" alt="Барбершоп «Бородинскй».">
+      </picture>
     </a>
     <nav class="main-nav">
       <div class="container">
