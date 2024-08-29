@@ -65,9 +65,9 @@
         <h2 class="card__title">Лжепётр Мчиславский</h2>
         <p class="card__text">Где я только не стригся, но так как делаете это вы — не умеет никто другой! Еще раз спасибо и до скорого!</p>
         <ul class="card__list tags">
-          <li class="tags__item">Стрижка</li>
-          <li class="tags__item">Бритье</li>
-          <li class="tags__item">Усы</li>
+          <li class="tags__item tags__item--scissors">Стрижка</li>
+          <li class="tags__item tags__item--beard">Бритье</li>
+          <li class="tags__item tags__item--mustache">Усы</li>
         </ul>
       </article>
       <article class="portfolio__card card">
@@ -79,7 +79,7 @@
         <h2 class="card__title">Саша Мальцев</h2>
         <p class="card__text">Попросил омолодить и омолодили! Кто теперь скажет, что мне 45?</p>
         <ul class="card__list tags">
-          <li class="tags__item">Стрижка</li>
+          <li class="tags__item tags__item--scissors">Стрижка</li>
         </ul>
       </article>
       <article class="portfolio__card card">
@@ -91,8 +91,8 @@
         <h2 class=" card__title">Владимир Иваныч</h2>
         <p class="card__text">К зимнему сезону — готов!</p>
         <ul class="card__list tags">
-          <li class="tags__item">Борода</li>
-          <li class="tags__item">Усы</li>
+          <li class="tags__item tags__item--beard">Борода</li>
+          <li class="tags__item tags__item--mustache">Усы</li>
         </ul>
       </article>
       <article class="portfolio__card card">
@@ -104,7 +104,7 @@
         <h2 class="card__title">Винстон Синий</h2>
         <p class="card__text">Как только зарастаю и волосы начинают мешать видеть — бегом в Бородинский!</p>
         <ul class="card__list tags">
-          <li class="tags__item">Стрижка</li>
+          <li class="tags__item tags__item--scissors">Стрижка</li>
         </ul>
       </article>
     </section>
@@ -156,37 +156,35 @@
     </aside>
   </main>
   <footer class="main-footer">
-    <div class="container">
-      <section class="main-footer__contacts contacts">
-        <h2 class="visually-hidden">Где нас найти</h2>
-        <p class="contacts__title">Барбершоп Бородинский</p>
-        <address class="contacts__text">г. Санкт-Петербург, ул. Большая Конюшенная 19/8</address>
-        <a class="contacts__phone" href="tel:+78125556666">+7 (812) 555-66-66</a>
-      </section>
-      <section class="main-footer__social social">
-        <h2 class="social__title">Давайте дружить!</h2>
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
-              <span class="visually-hidden">Мы в Вконтакте</span>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
-              <span class="visually-hidden">Мы в Ютубе</span>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
-              <span class="visually-hidden">Мы в Телеграме</span>
-            </a>
-          </li>
-        </ul>
-      </section>
-      <div class="main-footer__copyright copyright">
-        <p class="copyright__text">Разработано:</p>
-        <a class="copyright__link button button--second" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-      </div>
+    <section class="main-footer__contacts contacts">
+      <h2 class="visually-hidden">Где нас найти</h2>
+      <p class="contacts__title">Барбершоп Бородинский</p>
+      <address class="contacts__text">г. Санкт-Петербург, ул. Большая Конюшенная 19/8</address>
+      <a class="contacts__phone" href="tel:+78125556666">+7 (812) 555-66-66</a>
+    </section>
+    <section class="main-footer__social social">
+      <h2 class="social__title">Давайте дружить!</h2>
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+            <span class="visually-hidden">Мы в Вконтакте</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+            <span class="visually-hidden">Мы в Ютубе</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+            <span class="visually-hidden">Мы в Телеграме</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+    <div class="main-footer__copyright copyright">
+      <p class="copyright__text">Разработано:</p>
+      <a class="copyright__link button button--second" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
     </div>
   </footer>
 </body>
