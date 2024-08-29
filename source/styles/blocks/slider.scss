@@ -1,0 +1,30 @@
+.slider__list {
+  @include list;
+}
+
+
+.slider__toggles {
+  display: flex;
+  justify-content: center;
+  gap: 23px;
+}
+
+.slider__toggle {
+  padding: 4px;
+  border: 1px solid $bg-color-second;
+  background-color: transparent;
+  transform: rotate(45deg);
+  cursor: pointer;
+
+  &--active {
+    background-color: $bg-color-second;
+  }
+}
+
+.slider--light .slider__toggle {
+  border-color: $color-light;
+
+  &--active {
+    background-color: $color-light;
+  }
+}

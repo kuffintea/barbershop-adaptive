@@ -1,0 +1,79 @@
+.user-list {
+  background-color: $color-second;
+
+  @media (min-width: $tablet) {
+    background-color: transparent;
+  }
+}
+
+.user-list__login {
+  display: flex;
+  align-items: center;
+  padding: 13px 21px 13px 19px;
+
+  &:is(:hover, :focus-visible, :focus) {
+    background-color: #624530;
+  }
+
+  &:active {
+    color: $color-light-30;
+  }
+
+  &::before {
+    @include pseudo-element(16px, 16px);
+    @include mask(rgba(255, 255, 255, 0.3));
+    mask: url("../../icons/login.svg") no-repeat center;
+    margin-right: 12px;
+  }
+
+  &:active::before {
+    background-color: $color-light-30;
+  }
+
+  @media (min-width: $tablet) {
+    padding: 24px 17px;
+
+    &:is(:hover, :focus-visible, :focus) {
+      background-color: transparent;
+    }
+
+    &:hover::before {
+      background-color: $color-accent;
+    }
+  }
+
+  @media (min-width: $tablet) and (max-width: ($desktop - 1px)) {
+    & > span {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 30px 31px;
+
+    &:is(:hover, :focus-visible, :focus, :active) {
+      background-color: $color-light;
+      color: $color-basic;
+    }
+
+    &:active {
+      color: $color-basic-30;
+    }
+
+    &:is(:hover, :focus-visible, :focus)::before {
+      background-color: $color-basic-30;
+    }
+
+    &:active::before {
+      background-color: $color-basic-10;
+    }
+  }
+}
+
+// @media (max-width: ($tablet - 1px)) {
+//   .main-header:not(.main-nav--show) .user-list {
+//     display: none;
+//   }
+// }

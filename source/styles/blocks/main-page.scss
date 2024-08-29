@@ -1,0 +1,27 @@
+.main-page {
+  flex-grow: 1;
+
+  &--form {
+    padding: 35px 0 39px;
+  }
+}
+
+.main-page__title {
+  @include font(30px, 30px, inherit, 700);
+  text-transform: uppercase;
+  margin-bottom: 32px;
+
+  @media (max-width: ($tablet - 1px)) {
+    text-align: center;
+  }
+
+  @media (min-width: $tablet) {
+    @include font-min(40px, 52px);
+  }
+}
+
+.main-page__to-home {
+  @media (max-width: ($tablet - 1px)) {
+    display: none;
+  }
+}

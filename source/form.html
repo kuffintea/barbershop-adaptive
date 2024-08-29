@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -13,7 +13,7 @@
   <script src="scripts/index.js" defer></script>
 </head>
 
-<body>
+<body class="page__body">
   <header class="main-header">
     <a class="main-header__logo" href="index.html">
       <picture>
@@ -23,34 +23,34 @@
       </picture>
     </a>
     <nav class="main-nav">
-      <div class="container">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a class="site-list__link" href="index.html">Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="photo.html">Наши работы</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link site-list__link--current" href="#" aria-current="page">Записаться</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="#">Контакты</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          </li>
-        </ul>
-        <div class="main-nav__list user-list">
-          <a class="user-list__login" href="#">Войти</a>
-        </div>
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item">
+          <a class="site-list__link" href="index.html">Главная</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="photo.html">Наши работы</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link site-list__link--current" href="#" aria-current="page">Записаться</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="#">Контакты</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        </li>
+      </ul>
+      <div class="main-nav__list user-list">
+        <a class="user-list__login" href="#">
+          <span>Войти</span>
+        </a>
       </div>
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
     </nav>
   </header>
-  <main class="main-page">
+  <main class="main-page main-page--form">
     <h1 class="main-page__title">Запись на стрижку</h1>
     <a class="main-page__to-home button" href="index.html">На главную</a>
     <form class="main-page__form form" action="https://echo.htmlacademy.ru" method="post">
@@ -127,16 +127,16 @@
           <span class="form__checkmark form__checkmark--checkbox"></span>
         </label>
       </fieldset>
-      <button class="form__button button" type="submit">Отправить заявку</button>
+      <button class="form__button button button--accent" type="submit">Отправить заявку</button>
     </form>
   </main>
   <footer class="main-footer">
     <div class="container">
       <section class="main-footer__contacts contacts">
         <h2 class="visually-hidden">Где нас найти</h2>
-        <b class="contacts__title">Барбершоп Бородинский</b>
+        <p class="contacts__title">Барбершоп Бородинский</p>
         <address class="contacts__text">г. Санкт-Петербург, ул. Большая Конюшенная 19/8</address>
-        <a class="contacts__phone button" href="tel:+78125556666">+7 (812) 555-66-66</a>
+        <a class="contacts__phone" href="tel:+78125556666">+7 (812) 555-66-66</a>
       </section>
       <section class="main-footer__social social">
         <h2 class="social__title">Давайте дружить!</h2>
@@ -160,7 +160,7 @@
       </section>
       <div class="main-footer__copyright copyright">
         <p class="copyright__text">Разработано:</p>
-        <a class="copyright__link button" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a class="copyright__link button button--second" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       </div>
     </div>
   </footer>

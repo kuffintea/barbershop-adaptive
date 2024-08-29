@@ -1,0 +1,18 @@
+.button {
+  @include font(18px, 24px, inherit, 700);
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+  padding: 12px 25px;
+  border: 1px solid $border-basic;
+  cursor: pointer;
+
+  &--second {
+    border-color: $border-second;
+  }
+
+  &--accent {
+    background-color: $color-accent;
+    color: $color-light;
+  }
+}

@@ -1,0 +1,72 @@
+.stats {
+  @include font(18px, 18px, inherit);
+  background-color: $bg-color-second;
+
+  @media (min-width: $tablet) {
+    @include font-min(20px, 20px);
+  }
+
+  @media (min-width: $desktop) {
+    @include font-min(20px, 27px);
+  }
+}
+
+.stats__item {
+  padding: 20px 0;
+
+  @media (max-width: ($tablet - 1px)) {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    &:first-child {
+      background-color: rgba(45, 38, 130, 0.05);
+    }
+
+    &:nth-child(even) {
+      background-color: $color-light-12;
+    }
+  }
+
+  @media (min-width: $tablet) {
+    padding: 25px 34px 30px;
+
+    &:first-child,
+    &:last-child {
+      background-color: $color-light-5;
+    }
+
+    &:nth-child(2) {
+      background-color: #4e4e4e;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    &:nth-child(2) {
+      background-color: $color-light-12;
+    }
+  }
+}
+
+.stats__number {
+  @include font(40px, 40px, inherit, 700);
+  display: flex;
+  gap: 5px;
+
+  @media (min-width: $tablet) {
+    @include font-min(72px, 72px);
+  }
+}
+
+.stats__description {
+  text-align: end;
+  margin-left: auto;
+
+  @media (min-width: $tablet) {
+    text-align: start;
+
+    & > br {
+      display: none;
+    }
+  }
+}

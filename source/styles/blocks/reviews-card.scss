@@ -1,0 +1,17 @@
+.reviews-card {
+  margin: 0;
+
+  // @media (min-width: $tablet) {
+  //   padding: 30px;
+  //   border-top: 1px solid $border-basic;
+  //   border-bottom: 1px solid $border-basic;
+  // }
+}
+
+.reviews-card__author-name {
+  @include font(24px, 27px, inherit, 700);
+}
+
+.reviews-card__text {
+  margin: 0;
+}

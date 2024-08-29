@@ -1,0 +1,45 @@
+.contacts {
+  @media (min-width: $tablet) {
+    text-align: start;
+  }
+}
+
+.contacts__title {
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 10px;
+
+  @media (min-width: $tablet) {
+    text-transform: uppercase;
+    text-align: start;
+    margin-bottom: 16px;
+  }
+
+  @media (min-width: $tablet) {
+    text-align: start;
+  }
+}
+
+.contacts__text {
+  font-style: normal;
+
+  @media (max-width: ($tablet - 1px)) {
+    margin-bottom: 17px;
+  }
+
+  @media (min-width: $tablet) {
+    text-align: start;
+  }
+}
+
+.contacts__phone {
+  @media (max-width: ($tablet - 1px)) {
+    @include font(18px, 24px, inherit, 700);
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+    padding: 12px 25px;
+    border: 1px solid $border-second;
+    cursor: pointer;
+  }
+}

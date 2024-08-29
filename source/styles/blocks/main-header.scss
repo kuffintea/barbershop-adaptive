@@ -1,0 +1,42 @@
+.main-header {
+  background-color: $bg-color-main;
+
+  @media (min-width: $tablet) {
+    display: grid;
+    background-color: $color-basic;
+  }
+}
+
+.main-header__logo {
+  text-align: center;
+  padding: 29px 0 26px;
+  display: block;
+
+  &:is(:hover, :focus-visible, :focus) .main-header__logo-image {
+    opacity: 0.6;
+  }
+
+  &:active .main-header__logo-image {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet) {
+    @include background(cover);
+    padding: 39px 0 79px;
+    background-image: url("../../images/bg-tablet@1x.jpg");
+    order: 2;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../images/bg-tablet@2x.jpg");
+    }
+  }
+
+  @media (min-width: $desktop) {
+    padding: 57px 0 280px;
+    background-image: url("../../images/bg-desktop@1x.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../images/bg-desktop@2x.jpg");
+    }
+  }
+}

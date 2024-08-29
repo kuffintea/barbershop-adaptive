@@ -1,0 +1,22 @@
+.advantages {
+  @include font(20px, 27px, $color-light);
+  padding: 40px 0 46px;
+  background-color: $bg-color-main;
+
+  @media (min-width: $tablet) {
+    padding: 42px 0 90px;
+    background-color: $bg-color-second;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 47px 0 50px;
+  }
+}
+
+.advantages__toggles {
+  margin: 0;
+
+  @media (min-width: $tablet) {
+    display: none;
+  }
+}

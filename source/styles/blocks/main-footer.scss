@@ -1,0 +1,31 @@
+.main-footer {
+  text-align: center;
+  color: $color-light;
+  padding: 33px 0 24px;
+  background-color: $bg-color-basic;
+
+  @media (min-width: $tablet) {
+    line-height: 23px;
+    padding: 51px 0 59px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-bottom: 55px;
+  }
+}
+
+.main-footer__contacts {
+  margin-bottom: 26px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 0;
+  }
+}
+
+.main-footer__social {
+  margin-bottom: 31px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 0;
+  }
+}

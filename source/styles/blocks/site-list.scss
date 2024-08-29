@@ -1,0 +1,79 @@
+.site-list {
+  @include list;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 75%;
+    gap: 1px;
+  }
+}
+
+.site-list__link {
+  padding: 13px 80px;
+  display: block;
+
+  @media (max-width: ($tablet - 1px)) {
+    border-top: 1px solid #886e5b;
+    border-bottom: 1px solid $color-alternate;
+    background-color: $color-accent;
+
+    &:is(:hover, :focus-visible, :focus) {
+      background-color: $color-alternate;
+    }
+
+    &:active {
+      background-color: $color-second;
+      color: $color-light-30;
+    }
+  }
+
+  @media (min-width: $tablet) {
+    padding: 24px 17px;
+    position: relative;
+
+    &--current::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 17px;
+      right: 17px;
+      height: 3px;
+      background-color: $color-accent;
+    }
+
+    &:is(:hover, :focus-visible, :focus) {
+      color: $color-accent;
+    }
+
+    &:active {
+      color: $color-light-30;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    padding: 30px 31px;
+
+    &--current::after {
+      left: 31px;
+      right: 31px;
+    }
+
+    &:is(:hover, :focus-visible, :focus, :active) {
+      background-color: $color-light;
+      color: $color-basic;
+    }
+
+    &:active {
+      color: $color-basic-30;
+    }
+  }
+}
+
+// @media (max-width: ($tablet - 1px)) {
+//   .main-nav:not(.main-nav--show) .site-list__link:not(.site-list__link--current) {
+//     display: none;
+//   }
+// }

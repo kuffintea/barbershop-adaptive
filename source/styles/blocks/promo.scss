@@ -1,0 +1,10 @@
+.promo {
+  @include font(20px, inherit, $color-light);
+  background-color: $bg-color-second;
+  border: 1px solid $border-second;
+  padding: 16px 21px;
+}
+
+.promo__text {
+  margin: 0;
+}

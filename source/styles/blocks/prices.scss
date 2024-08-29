@@ -1,0 +1,22 @@
+.prices {
+  background-color: $bg-color-second;
+  color: $color-light;
+  padding: 41px 0 39px;
+}
+
+.prices__title {
+  @include font(30px, 30px, inherit, 700);
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.prices__list {
+  @include list;
+}
+
+.prices__item {
+  &:not(:last-child) {
+    margin-bottom: 27px;
+  }
+}

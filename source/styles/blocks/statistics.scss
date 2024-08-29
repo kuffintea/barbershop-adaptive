@@ -1,0 +1,74 @@
+.statistics {
+  color: $color-light;
+  background-color: $bg-color-main;
+}
+
+.statistics__text-wrapper {
+  padding: 28px 0;
+  color: $color-basic;
+  background-color: $color-light;
+
+  @media (max-width: ($tablet - 1px)) {
+    text-align: center;
+  }
+
+  @media (min-width: $tablet) {
+    padding: 25px 0 37px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 32px 0 30px;
+  }
+}
+
+.statistics__slogan {
+  @include font(30px, 30px, inherit, 700);
+
+  @media (max-width: ($tablet - 1px)) {
+    text-transform: uppercase;
+    margin-bottom: 13px;
+  }
+
+  @media (min-width: $tablet) {
+    @include font-min(40px, 40px);
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 38px;
+  }
+}
+
+.statistics__intro {
+  @include font(20px, 27px, inherit);
+
+  @media (min-width: $desktop) {
+    margin-bottom: 34px;
+  }
+}
+
+.statistics__legend {
+  @include font(20px, 20px, inherit);
+
+  &--top {
+    color: $color-basic-30;
+
+    @media (max-width: ($tablet - 1px)) {
+      display: none;
+    }
+  }
+
+  &--bottom {
+    text-align: center;
+    color: $color-light-30;
+
+    @media (min-width: $tablet) {
+      display: none;
+    }
+  }
+}
+
+.statistics__list {
+  @media (max-width: ($tablet - 1px)) {
+    margin-bottom: 20px;
+  }
+}

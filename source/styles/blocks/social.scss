@@ -1,0 +1,18 @@
+.social__title {
+  @include font(inherit, 23px, inherit);
+  margin-bottom: 13px;
+
+  @media (max-width: ($desktop - 1px)) {
+    display: none;
+  }
+}
+
+.social__list {
+  @include list;
+  display: flex;
+}
+
+.social__link {
+  @include pseudo-element(36px, 36px);
+  padding: 33px 36px;
+}

@@ -1,1 +1,28 @@
-/* здесь используйте глобальные переменные */
+/* colors */
+$color-basic: #000000;
+$color-basic-10: rgba(0, 0, 0, 0.1);
+$color-basic-30: rgba(0, 0, 0, 0.3);
+$color-accent: #826550;
+$color-alternate:#755a46;
+$color-second: #6a4d38;
+$color-light: #ffffff;
+$color-light-5: rgba(255, 255, 255, 0.05);
+$color-light-10: rgba(255, 255, 255, 0.1);
+$color-light-12: rgba(255, 255, 255, 0.12);
+$color-light-30: rgba(255, 255, 255, 0.3);
+$bg-color-main: #242424;
+$bg-color-basic: #292929;
+$bg-color-second: #353535;
+$bg-color-accent: #d5c9bd;
+$bg-color-light: #f8f5f2;
+$bg-color-disabled: #aeaeae;
+$border-basic:#e5ddd5;
+$border-second:#4a4a4a;
+$border-alternate:#777777;
+
+/* fonts */
+$font-basic: "PT Sans Narrow", arial, sans-serif;
+
+/* display */
+$tablet: 768px;
+$desktop: 1200px;

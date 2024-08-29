@@ -1,1 +1,3 @@
 /* здесь подключите шрифты */
+@include font-face("PT Sans Narrow", url("../../fonts/pt-sans-narrow/PTSansNarrow-Regular.woff2") format("woff2"));
+@include font-face("PT Sans Narrow", url("../../fonts/pt-sans-narrow/PTSansNarrow-Bold.woff2") format("woff2"), 700);

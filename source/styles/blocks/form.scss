@@ -1,0 +1,36 @@
+.form__wrapper {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.form__wrapper-title {
+  @include font(20px, 27px, inherit);
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0;
+  margin-bottom: 36px;
+
+  @media (min-width: $desktop) {
+    margin-bottom: 44px;
+  }
+}
+
+.form__field {
+  @include font(18px, 30px, $color-basic);
+  border: 1px solid $border-basic;
+  padding: 8px 18px 10px;
+
+  &::placeholder {
+    color: $color-basic;
+  }
+
+  @media (min-width: $desktop) {
+    @include font-min(24px, 30px);
+    padding: 19px 24px;
+  }
+}
+
+.form__label {
+  @include font(18px, 24px, inherit);
+}

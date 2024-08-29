@@ -1,0 +1,29 @@
+.news-card {
+  &:not(:last-child) {
+    margin-bottom: 16px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid $border-basic;
+  }
+}
+
+.news-card__link {
+  display: flex;
+  gap: 20px;
+}
+
+.news-card__date {
+  @include font(16px, 30px, $color-light);
+  background-color: $color-basic;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 10px 10px 0;
+}
+
+.news-card__day {
+  @include font(30px, 30px, inherit, 700);
+  display: block;
+}
+
+.news-card__text {
+  margin: 0;
+}

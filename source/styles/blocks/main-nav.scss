@@ -1,0 +1,49 @@
+.main-nav {
+  @include font(18px, 24px, $color-light);
+  text-align: center;
+
+  @media (max-width: ($tablet - 1px)) {
+    background-color: $color-second;
+    position: relative;
+
+    &--show {
+      min-height: 70vh;
+      max-height: calc(100vh - 92px);
+      overflow: auto;
+    }
+  }
+
+  @media (min-width: $tablet) {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+  }
+}
+
+.main-nav__toggle {
+  border: 0;
+  padding: 17px;
+  background-color: $color-second;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  &:is(:hover, :focus-visible, :focus) {
+    background-color: #624530;
+  }
+
+  &::before {
+    @include pseudo-element(36px, 18px);
+    @include background;
+    background-image: url("../../icons/menu.svg");
+  }
+
+  &:active::before {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet) {
+    display: none;
+  }
+}

@@ -1,0 +1,18 @@
+.prices-card {
+  display: flex;
+}
+
+.prices-card__title {
+  @include font(20px, inherit, inherit, 700);
+  display: flex;
+  flex-direction: column;
+}
+
+.prices-card__text {
+  font-weight: 400;
+}
+
+.prices-card__number {
+  @include font(20px, inherit, inherit);
+  margin-left: auto;
+}
