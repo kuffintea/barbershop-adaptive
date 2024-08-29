@@ -1,0 +1,30 @@
+.card {
+  border: 1px solid $border-basic;
+}
+
+.card__image {
+  @media (max-width: ($tablet - 1px)) {
+    margin-bottom: 24px;
+  }
+}
+
+.card__best-tag {
+  @include font(20px, 27px, $color-light, 700);
+  text-transform: uppercase;
+  background-color: $color-accent;
+  padding: 12px 19px;
+}
+
+.card__title {
+  @include font(24px, 27px, inherit, 700);
+  margin-bottom: 26px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 38px;
+  }
+}
+
+.card__text {
+  margin: 0;
+  margin-bottom: 26px;
+}
