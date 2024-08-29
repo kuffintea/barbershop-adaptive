@@ -13,6 +13,23 @@
 }
 
 .social__link {
-  @include pseudo-element(36px, 36px);
   padding: 33px 36px;
+  display: block;
+
+  &::after {
+    @include pseudo-element(36px, 36px);
+    @include background;
+  }
+
+  &--vkontakte::after {
+    background-image: url("../../icons/stack.svg#logo-vk");
+  }
+
+  &--youtube::after {
+    background-image: url("../../icons/stack.svg#logo-youtube");
+  }
+
+  &--telegram::after {
+    background-image: url("../../icons/stack.svg#logo-telegram");
+  }
 }

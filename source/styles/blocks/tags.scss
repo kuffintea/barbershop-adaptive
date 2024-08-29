@@ -3,3 +3,22 @@
   @include font(16px, inherit, inherit);
   text-transform: uppercase;
 }
+
+.tags__item {
+  &::before {
+    @include pseudo-element(45px, 22px);
+    @include background;
+  }
+
+  &--scissors::before {
+    background-image: url("../../icons/stack.svg#scissors");
+  }
+
+  &--beard::before {
+    background-image: url("../../icons/stack.svg#admiral");
+  }
+
+  &--mustache::before {
+    background-image: url("../../icons/stack.svg#mustache");
+  }
+}

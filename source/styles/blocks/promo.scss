@@ -3,6 +3,12 @@
   background-color: $bg-color-second;
   border: 1px solid $border-second;
   padding: 16px 21px;
+
+  &::before {
+    @include pseudo-element(58px, 58px);
+    @include background;
+    background-image: url("../../icons/stack.svg#clock");
+  }
 }
 
 .promo__text {

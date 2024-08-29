@@ -33,4 +33,29 @@
 
 .form__label {
   @include font(18px, 24px, inherit);
+
+  &:has(> .form__checkmark--radio)::after {
+    @include pseudo-element(63px, 104px);
+    @include background;
+  }
+
+  &--admiral::after {
+    background-image: url("../../icons/stack.svg#admiral");
+  }
+
+  &--logger::after {
+    background-image: url("../../icons/stack.svg#logger");
+  }
+
+  &--polar::after {
+    background-image: url("../../icons/stack.svg#polar");
+  }
+
+  &--boyar::after {
+    background-image: url("../../icons/stack.svg#boyar");
+  }
+
+  &--sage::after {
+    background-image: url("../../icons/stack.svg#sage");
+  }
 }

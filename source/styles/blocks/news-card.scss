@@ -13,10 +13,11 @@
 
 .news-card__date {
   @include font(16px, 30px, $color-light);
-  background-color: $color-basic;
+  @include background;
   text-transform: uppercase;
   text-align: center;
-  padding: 10px 10px 0;
+  padding: 10px;
+  background-image: url("../../icons/stack.svg#tag");
 }
 
 .news-card__day {
